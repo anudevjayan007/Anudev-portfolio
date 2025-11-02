@@ -1,0 +1,51 @@
+<section class="projects-container">
+  <h1 class="section-title">My Projects</h1>
+
+  <div class="projects-grid">
+    <!-- Project Card 1 -->
+    <div class="project-card">
+      <div class="carousel">
+        <img src="assets/projects/proj1-1.jpg" alt="Project 1 Screenshot" class="carousel-img active" />
+        <img src="assets/projects/proj1-2.jpg" alt="Project 1 Screenshot 2" class="carousel-img" />
+        <button class="carousel-btn prev" (click)="prevImage(0)">&#10094;</button>
+        <button class="carousel-btn next" (click)="nextImage(0)">&#10095;</button>
+      </div>
+
+      <div class="project-info">
+        <h2>Secure Login Portal</h2>
+        <p>
+          A secure authentication portal built with Angular, implementing JWT-based login,
+          form validation, and encryption for safe session handling.
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank" class="btn primary">GitHub</a>
+          <a href="#" target="_blank" class="btn secondary">Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Card 2 -->
+    <div class="project-card">
+      <div class="carousel">
+        <img src="assets/projects/proj2-1.jpg" alt="Project 2 Screenshot" class="carousel-img active" />
+        <img src="assets/projects/proj2-2.jpg" alt="Project 2 Screenshot 2" class="carousel-img" />
+        <button class="carousel-btn prev" (click)="prevImage(1)">&#10094;</button>
+        <button class="carousel-btn next" (click)="nextImage(1)">&#10095;</button>
+      </div>
+
+      <div class="project-info">
+        <h2>E-Commerce Dashboard</h2>
+        <p>
+          A responsive admin dashboard for managing users, products, and orders, showcasing
+          Angular’s modular architecture and API integration.
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank" class="btn primary">GitHub</a>
+          <a href="#" target="_blank" class="btn secondary">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="coming-soon">✨ More projects coming soon...</p>
+</section>

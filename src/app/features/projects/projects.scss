@@ -1,0 +1,136 @@
+.projects-container {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 3rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+
+/* Card Design */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 400px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel-img.active {
+  display: block;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Info Section */
+.project-info {
+  padding: 1.5rem;
+  text-align: left;
+
+  h2 {
+    font-size: 1.4rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Buttons */
+.project-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  background-color: #0078d7;
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background-color: #005fa3;
+}
+
+.btn.secondary {
+  border: 2px solid #0078d7;
+  color: #0078d7;
+  background: transparent;
+}
+
+.btn.secondary:hover {
+  background-color: #0078d7;
+  color: #fff;
+}
+
+.coming-soon {
+  margin-top: 3rem;
+  font-style: italic;
+  color: #777;
+}
